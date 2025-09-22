@@ -132,6 +132,19 @@ footer h2 {
     color: #e8ff66;
 }
 
+.copyright {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.copyright p {
+    text-align: center;
+    margin: 0;
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
     .profile-photo {
