@@ -1,12 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Babich</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27white%27%3E%3Cpath%20d%3D%27M0%200h24v24H0z%27%20fill%3D%27none%27/%3E%3Cpath%20d%3D%27M5.315%202.1c.791%20-.113%201.9%20.145%203.333%20.966l.272%20.161l.16%20.1l.397%20-.083a13.3%2013.3%200%200%201%204.59%20-.08l.456%20.08l.396%20.083l.161%20-.1c1.385%20-.84%202.487%20-1.17%203.322%20-1.148l.164%20.008l.147%20.017l.076%20.014l.05%20.011l.144%20.047a1%201%200%200%201%20.53%20.514a5.2%205.2%200%200%201%20.397%202.91l-.047%20.267l-.046%20.196l.123%20.163c.574%20.795%20.93%201.728%201.03%202.707l.023%20.295l.007%20.272c0%203.855%20-1.659%205.883%20-4.644%206.68l-.245%20.061l-.132%20.029l.014%20.161l.008%20.157l.004%20.365l-.002%20.213l-.003%203.834a1%201%200%200%201%20-.883%20.993l-.117%20.007h-6a1%201%200%200%201%20-.993%20-.883l-.007%20-.117v-.734c-1.818%20.26%20-3.03%20-.424%20-4.11%20-1.878l-.535%20-.766c-.28%20-.396%20-.455%20-.579%20-.589%20-.644l-.048%20-.019a1%201%200%200%201%20.564%20-1.918c.642%20.188%201.074%20.568%201.57%201.239l.538%20.769c.76%201.079%201.36%201.459%202.609%201.191l.001%20-.678l-.018%20-.168a5.03%205.03%200%200%201%20-.021%20-.824l.017%20-.185l.019%20-.12l-.108%20-.024c-2.976%20-.71%20-4.703%20-2.573%20-4.875%20-6.139l-.01%20-.31l-.004%20-.292a5.6%205.6%200%200%201%20.908%20-3.051l.152%20-.222l.122%20-.163l-.045%20-.196a5.2%205.2%200%200%201%20.145%20-2.642l.1%20-.282l.106%20-.253a1%201%200%200%201%20.529%20-.514l.144%20-.047l.154%20-.03z%27/%3E%3C/svg%3E">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000080">
+  <meta name="description" content="John Babich / babichgh - личная страница, проекты, языки и немного старого интернета">
+  <title>John Babich - personal homepage</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Hello</h1>
+  <a class="skip-link" href="#main" data-i18n="skip">К содержимому</a>
+  <div class="site-shell">
+    <header class="masthead">
+      <div class="site-address"><svg class="pixel-icon" aria-hidden="true"><use href="icons.svg#globe"/></svg><span>https://babichgh.github.io</span></div>
+      <div class="language-switch" role="group" aria-label="Language / Язык">
+        <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <main id="main" class="desktop">
+      <aside class="sidebar">
+        <section class="window profile-window">
+          <div class="titlebar"><span>user.info</span><span aria-hidden="true">[−] [×]</span></div>
+          <div class="profile-content">
+            <div class="avatar-frame"><img src="https://avatars.githubusercontent.com/u/166637847?v=4" alt="GitHub avatar: babichgh" width="144" height="144"></div>
+            <h1>John Babich</h1>
+            <p class="handle">@babichgh</p>
+            <p class="profile-caption" data-i18n="caption">Человек по ту сторону экрана</p>
+            <div class="profile-tags"><span>Linux</span><span>Rust</span><span>web</span></div>
+          </div>
+        </section>
+
+        <nav class="window navigation" aria-label="Navigation / Навигация">
+          <div class="titlebar"><span data-i18n="directory">каталог</span><span aria-hidden="true">[≡]</span></div>
+          <a href="#about"><svg class="pixel-icon" aria-hidden="true"><use href="icons.svg#computer"/></svg><span data-i18n="navAbout">Обо мне</span><span aria-hidden="true">↗</span></a>
+          <a href="#projects"><svg class="pixel-icon" aria-hidden="true"><use href="icons.svg#folder"/></svg><span data-i18n="navProjects">Проекты</span><span aria-hidden="true">↗</span></a>
+          <a href="#contact"><svg class="pixel-icon" aria-hidden="true"><use href="icons.svg#mail"/></svg><span data-i18n="navContact">На связи</span><span aria-hidden="true">↗</span></a>
+        </nav>
+
+        <div class="sticker" aria-label="Made for humans, not algorithms"><svg class="pixel-icon" aria-hidden="true"><use href="icons.svg#computer"/></svg><div>PERSONAL WEBSITE<br><strong>NOT AN ALGORITHM</strong></div></div>
+        <p class="sidebar-note" data-i18n="sidebarNote">Лучше смотреть с любопытством.<br>Разрешение экрана - любое</p>
+      </aside>
+
+      <div class="main-column">
+        <section id="about" class="window about-window">
+          <div class="titlebar"><span>hello_world.html</span><span aria-hidden="true">[−] [□] [×]</span></div>
+          <div class="window-body">
+            <div class="eyebrow" data-i18n="eyebrow">ЛИЧНАЯ СТРАНИЦА / НЕ РЕЗЮМЕ</div>
+            <h2 class="hero-heading"><span data-i18n="hello">Привет, я</span><br><span class="name-highlight">Babich<svg class="hero-icon" aria-hidden="true"><use href="icons.svg#computer"/></svg></span></h2>
+            <p class="intro" data-i18n="intro">Здесь живут мои проекты, интересы и маленький кусочек меня. Без ленты рекомендаций - просто моя страничка в интернете</p>
+            <div class="dashed-divider" aria-hidden="true"></div>
+            <div class="about-notes">
+              <div><span class="note-icon" aria-hidden="true">&gt;_</span><p data-i18n="codeNote">Пишу Rfetch на Rust и экспериментирую с настройкой терминала</p></div>
+              <div><span class="note-icon" aria-hidden="true">✦</span><p data-i18n="theatreNote">С 2021 по 2025 занимался в театральной студии. Да, жизнь бывает не только перед монитором</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="window languages-window">
+          <div class="titlebar"><span>languages.ini</span><span aria-hidden="true">[−] [×]</span></div>
+          <div class="window-body">
+            <div class="section-heading"><h2 data-i18n="languagesTitle">Учусь говорить с миром</h2></div>
+            <p class="muted" data-i18n="languagesIntro">Учу английский и польский. По одному уроку за раз</p>
+            <div class="language-cards">
+              <div class="language-card"><span class="language-symbol" aria-hidden="true">Aa</span><div><h3 data-i18n="english">Английский</h3><span class="muted" data-i18n="duolingoScore">Оценка Duolingo</span></div><strong>80</strong></div>
+              <div class="language-card"><span class="language-symbol polish" aria-hidden="true">Ąą</span><div><h3 data-i18n="polish">Польский</h3><span class="muted" data-i18n="duolingoScore">Оценка Duolingo</span></div><strong>8</strong></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="window projects-window">
+          <div class="titlebar"><span>~/projects</span><span aria-hidden="true">[−] [□] [×]</span></div>
+          <div class="window-body">
+            <div class="section-heading"><h2 data-i18n="projectsTitle">Сделано с любопытством</h2><span class="tiny-label">02 FILES</span></div>
+            <a class="project-card" href="https://github.com/babichgh/Rfetch" target="_blank" rel="noopener noreferrer">
+              <svg class="project-icon" aria-hidden="true"><use href="icons.svg#terminal"/></svg><div class="project-copy"><div class="project-title"><h3>Rfetch</h3><span class="project-tag">Rust</span></div><p data-i18n="rfetchDescription">Аналог fastfetch на Rust. Информация о системе, ASCII-логотипы и немного любви к терминалу</p></div><span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="project-card" href="https://github.com/babichgh/my-konsole" target="_blank" rel="noopener noreferrer">
+              <svg class="project-icon" aria-hidden="true"><use href="icons.svg#folder"/></svg><div class="project-copy"><div class="project-title"><h3>my-konsole</h3><span class="project-tag" data-i18n="archived">Архив</span></div><p data-i18n="konsoleDescription">Моя кастомизация Konsole. Небольшой архив того, как терминал становится своим</p></div><span class="project-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </section>
+
+        <section id="contact" class="window contact-window">
+          <div class="titlebar"><span>connections.link</span><span aria-hidden="true">[−] [×]</span></div>
+          <div class="window-body">
+            <h2 data-i18n="contactTitle">Не теряемся</h2>
+            <p class="muted" data-i18n="contactIntro">Другие места в интернете, где меня можно найти</p>
+            <div class="social-links">
+              <a class="retro-button" href="https://github.com/babichgh" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              <a class="retro-button" id="telegram-link" href="https://t.me/babichtgc" target="_blank" rel="noopener noreferrer">Telegram <span aria-hidden="true">↗</span></a>
+              <a class="retro-button" id="youtube-link" href="https://www.youtube.com/@babichhello" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="donation-box">
+              <div class="donation-heading"><span aria-hidden="true">◇</span><h3 data-i18n="donationTitle">На новые эксперименты</h3><span class="tiny-label">TON</span></div>
+              <p class="muted" data-i18n="donationIntro">Если хочется поддержать - можно и так. Спасибо ♥</p>
+              <div class="wallet-row"><code id="ton-address">UQAs6dskLcvTz943DgpplCX39BuWBRUgp5xRY8NTEIzF0uYM</code><button type="button" class="retro-button copy-button" id="copy-wallet" data-i18n="copy">Копировать</button></div>
+              <p id="copy-status" class="small-note" role="status" aria-live="polite"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer><div class="footer-badges"><span>HTML + CSS + ♥</span><span>NO COOKIES</span><span>SMALL WEB</span></div><p>© <span id="year">2026</span> babichgh</p><a href="#" data-i18n="backTop">↑ Наверх</a></footer>
+  </div>
 </body>
 </html>
