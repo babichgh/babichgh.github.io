@@ -91,6 +91,9 @@ h3 { font-size: 16px; }
 .project-copy p { color: var(--muted); font-size: 12px; }
 .project-arrow { align-self: flex-start; margin-left: auto; color: var(--blue); font-size: 20px; }
 .project-card:hover h3 { color: #005bd6; }
+.hardware-list { display: grid; gap: 14px; margin: 20px 0 0; padding: 16px; background: white; box-shadow: var(--sunken); }
+.hardware-list dt { color: var(--blue); font-weight: bold; font-size: 13px; }
+.hardware-list dd { margin: 3px 0 0; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
 .contact-window h2 { margin-bottom: 10px; }
 .social-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
 .retro-button { display: inline-flex; align-items: center; justify-content: center; gap: 18px; padding: 8px 14px; border: 0; box-shadow: var(--raised); background: var(--panel); color: black; text-decoration: none; font-size: 12px; min-height: 33px; }
