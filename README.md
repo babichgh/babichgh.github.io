@@ -5,7 +5,7 @@ Personal Windows 95/98-inspired webcore homepage. Plain HTML, CSS, and JavaScrip
 ## Customize
 
 - Edit the `href` attributes on `telegram-link` and `youtube-link` in `index.html` to update social profile URLs.
-- Edit Russian and English text in `translations` in `script.js`. The Russian HTML in `index.html` also serves as a fallback without JavaScript.
+- Edit Russian and English text in `translations` in `script.js`. Update the matching Russian text in `index.html` too - it serves as a fallback without JavaScript.
 - Edit the TON wallet address in `index.html` (`id="ton-address"`).
 - Colors, layout, and responsive styles are in `style.css`.
 
