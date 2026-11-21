@@ -24,6 +24,13 @@ Personal homepage for John Babich / babichgh, published at https://babichgh.gith
 - Preserve the GitHub avatar, language scores, theatre dates, and TON address unless the user requests changes
 - Do not invent biographical details or add analytics, cookies, or external runtime dependencies
 
+## Copy editing
+
+- Use the `unslop` skill when adding or editing site copy or documentation
+- Apply it to both Russian and English text; keep Russian HTML fallbacks in sync
+- Fix only concrete defects; preserve personal jokes, retro labels, facts, and the author's voice
+- Do not rewrite unrelated text or change code, layout, or icons as part of copy editing
+
 ## Checks
 
 - Run `node --check script.js` and `git diff --check`
