@@ -15,7 +15,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 24px; }
 body {
   margin: 0;
   background: var(--desktop);
-  background-image: repeating-linear-gradient(0deg, #ffffff03 0, #ffffff03 1px, transparent 1px, transparent 3px);
   color: var(--ink);
   font: 14px/1.6 Tahoma, "MS Sans Serif", Arial, sans-serif;
 }
@@ -39,9 +38,9 @@ h3 { font-size: 16px; }
 .desktop { display: grid; grid-template-columns: 238px minmax(0, 1fr); align-items: start; gap: 24px; }
 .sidebar, .main-column { display: grid; gap: 24px; min-width: 0; }
 .window { padding: 3px; background: var(--panel); box-shadow: var(--raised), 3px 3px 0 #0004; scroll-margin-top: 24px; }
-.titlebar { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 25px; padding: 3px 5px; background: linear-gradient(90deg, #000080, #1084d0); color: white; font: bold 12px/1.4 Tahoma, Arial, sans-serif; }
+.titlebar { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 25px; padding: 3px 5px; background: var(--blue); color: white; font: bold 12px/1.4 Tahoma, Arial, sans-serif; }
 .titlebar > :first-child { display: flex; align-items: center; gap: 5px; }
-.titlebar > :first-child::before { content: ""; width: 12px; height: 12px; border: 1px solid #000; background: linear-gradient(#000080 0 3px, #fff 3px); box-shadow: inset 1px 1px #c0c0c0; flex-shrink: 0; }
+.titlebar > :first-child::before { content: ""; width: 12px; height: 12px; border: 1px solid #000; background: var(--white); box-shadow: inset 0 3px var(--blue), inset 1px 1px #c0c0c0; flex-shrink: 0; }
 .titlebar > :last-child { white-space: nowrap; color: black; font: bold 11px/16px "Courier New", monospace; background: var(--panel); box-shadow: var(--raised); padding: 1px 3px; }
 .profile-content { padding: 25px 18px 23px; text-align: center; }
 .avatar-frame { width: 152px; margin: 0 auto 19px; padding: 4px; background: white; box-shadow: var(--sunken); }
