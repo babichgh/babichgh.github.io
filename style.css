@@ -41,7 +41,16 @@ h3 { font-size: 16px; }
 .titlebar { display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 25px; padding: 3px 5px; background: var(--blue); color: white; font: bold 12px/1.4 Tahoma, Arial, sans-serif; }
 .titlebar > :first-child { display: flex; align-items: center; gap: 5px; }
 .titlebar > :first-child::before { content: ""; width: 12px; height: 12px; border: 1px solid #000; background: var(--white); box-shadow: inset 0 3px var(--blue), inset 1px 1px #c0c0c0; flex-shrink: 0; }
-.titlebar > :last-child { white-space: nowrap; color: black; font: bold 11px/16px "Courier New", monospace; background: var(--panel); box-shadow: var(--raised); padding: 1px 3px; }
+.window-controls { display: flex; flex-shrink: 0; gap: 2px; }
+.window-control { position: relative; width: 18px; height: 18px; background: var(--panel); box-shadow: var(--raised); }
+.window-control::before, .window-control::after { content: ""; position: absolute; }
+.window-control.minimize::before { left: 5px; bottom: 5px; width: 8px; height: 2px; background: var(--ink); }
+.window-control.maximize::before { left: 3px; top: 3px; width: 10px; height: 10px; border: 1px solid var(--ink); border-top-width: 2px; }
+.window-control.close { margin-left: 2px; }
+.window-control.close::before, .window-control.close::after { left: 5px; top: 5px; width: 2px; height: 2px; background: var(--ink); }
+.window-control.close::before { box-shadow: 1px 1px var(--ink), 2px 2px var(--ink), 3px 3px var(--ink), 4px 4px var(--ink), 5px 5px var(--ink), 6px 6px var(--ink); }
+.window-control.close::after { left: 11px; box-shadow: -1px 1px var(--ink), -2px 2px var(--ink), -3px 3px var(--ink), -4px 4px var(--ink), -5px 5px var(--ink), -6px 6px var(--ink); }
+.window-control.menu::before { left: 4px; top: 5px; width: 10px; height: 2px; background: var(--ink); box-shadow: 0 3px var(--ink), 0 6px var(--ink); }
 .profile-content { padding: 25px 18px 23px; text-align: center; }
 .avatar-frame { width: 152px; margin: 0 auto 19px; padding: 4px; background: white; box-shadow: var(--sunken); }
 .avatar-frame img { display: block; width: 100%; height: auto; }
